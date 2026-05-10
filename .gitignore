@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+.venv_py39/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Build/cache
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Keep generated artifacts if needed for submission
+# (results/ and submission folders are intentionally tracked)

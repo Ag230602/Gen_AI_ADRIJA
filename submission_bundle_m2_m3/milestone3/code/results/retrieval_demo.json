@@ -1,0 +1,110 @@
+{
+  "n_docs": 91,
+  "queries": [
+    {
+      "query": "flooding storm surge",
+      "top_k": [
+        {
+          "doc_id": 64,
+          "score": 8.674412534792378,
+          "text": "Sandbagging Facilities in Storm Surge Zone \nSome entities placed s andbags at the entrance to the substation contro l houses on the barrier islands. Others \nmonitored the storm\u2019s path, predicted tide/surge levels, and installed sand bags at key stations prone to flooding.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 16,
+            "chunk_id": 47
+          }
+        },
+        {
+          "doc_id": 33,
+          "score": 7.31059792932517,
+          "text": "Affected Areas \nHurricane Irma affected most of the state of Florida as a hurricane and some areas in Georgia as a tropical storm. The \nFlorida Keys were devastated by Irma , and some areas may take years to rebuild. The most heavily affected areas \nwere in South Florida\u2014primarily Southeast Florida. The East Coast of Florida experienced storm surge and associated \nsaltwater contamination while the West Coast also experienced some flooding due to heavy rainfall.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 8,
+            "chunk_id": 16
+          }
+        },
+        {
+          "doc_id": 27,
+          "score": 6.790295219791933,
+          "text": "The recovery effort was initiated by the transmission, distribution, and generation registered entities. The initial \nrecovery consisted of inspections and asset assessments. The registered entities \u2019 initial assessments were greatly \nhampered by storm surge, storm damage , and the lack of access ibility into deep right -of-ways due to localized \nflooding and storm debris. The priority, as communicated by the RC and the TOPs, was to the restore transmission \nassets to generating facilities needed for distribution load recovery. While there was suffici ent generation capacity \navailable to meet the load as restoration progressed, there were some cases where customer restoration was \nhindered by local area transmission and distribution outages.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 6,
+            "chunk_id": 10
+          }
+        }
+      ]
+    },
+    {
+      "query": "evacuation orders",
+      "top_k": [
+        {
+          "doc_id": 30,
+          "score": 4.9100473056929586,
+          "text": "NERC | Hurricane Irma Event Analysis Report | August 2018 \nvii \nThe registered entities overcame these issues by using approaches that have not been used in previous weather -\nrelated events occurring in the Region: \n\uf0b7 Unmanned aerial drones were used to perform damage assessments  on inaccessible transmission and \ndistribution lines. \n\uf0b7 Amphibious vehicles and airboats were used to access flooded areas. \n\uf0b7 A mobile application allowed damage reports to be sent back to the office where the process automatically \nmapped the damage location and then issued work orders to line workers in real time.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 7,
+            "chunk_id": 13
+          }
+        },
+        {
+          "doc_id": 53,
+          "score": 3.167897375774286,
+          "text": "Other Storm Severity Issues \nDue to early predictions of Hurricane Irma\u2019s path making landfall in Southeast Florida and moving up the Florida East \nCoast, much of the population in the Southeast began to evacuate early, some due to mandatory orders but some \nalso voluntarily. Based on the size of the hurricane, it was predicted that if Irma were to travel up the East Coast, the \nWest Coast would be hit with hurricane force winds from the outer bands. These predications had Floridians on edge \nand ready to evacuate. As the \u201cspaghetti\u201d models began to change and move Irma towards the middle of the Florida, \nplacing the eye over the center of the state, more of the population began to evacuate. The final predictions had Irma \nskirting the southernmost part of Florida and  making landfall in the Naples/ Fort Myers area (which proved to be \naccurate). At this point, much of the population in the Southeast and along the East Coast had already evacuated and \nnow there were mandatory evacuations for low-lying areas in the Southwest and Central West Coast. Due to the early \nwarnings of severe hurricane force winds, supplies had become scarce, and those without storm shutters could not \nfind materials necessary to ensure their safety (e.g., corrugated metal, plywood, concrete screws, proper drills). This \nled to more voluntary evacuations from Florida. With all the evacuations , utilities were experiencing high voltage \nissues in load centers before the h urricane made landfall. Fuel was very difficult to find since gas stations were not \nable to keep up with the heighten ed demand. This made it very difficult for control center staff who were working \nthe hurricane before, during, and after landfall.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 12,
+            "chunk_id": 36
+          }
+        },
+        {
+          "doc_id": 0,
+          "score": 0.0,
+          "text": "Improving Tropical Cyclogenesis Forecasts of Hurricane Irma (2017) through the\nAssimilation of All-Sky Infrared Brightness Temperatures\nCHRISTOPHER M. HARTMAN,a,b XINGCHAO CHEN ,a,bAND MAN-YAU CHANa,b\na Department of Meteorology and Atmospheric Science, The Pennsylvania State University, University Park, Pennsylvania\nb Center for Advanced Data Assimilation and Predictability Techniques, The Pennsylvania State University, University Park, Pennsylvania\n(Manuscript received 19 July 2022, in \ufb01nal form 18 November 2022)\nABSTRACT: The assimilation of satellite all-sky infrared (IR) brightness temperatures (BTs) has been shown in previous\nstudies to improve intensity forecasts of tropical cyclones. In this study, we examine whether assimilating all-sky IR BTs can\nalso potentially improve tropical cyclogenesis forecasts by improving the pregenesis cloud and moisture \ufb01elds. By using an\nensemble-based data assimilation system, we show that the assimilation of upper-tropospheric water vapor channel BTs\nobserved by the Meteosat-10SEVIRI instrument two days before the formation of a tropical depression improves the genesis\nforecast of Hurricane Irma (2017), a classic Cape Verde storm, by up to 24 h while also capturing its later rapid intensi\ufb01cation\nin deterministic forecasts. In an experiment that withholds the assimilation of all-sky IR BTs, the assimilation of conventional\nobservations from the Global Telecommunications System (GTS) leads to the premature genesis of Hurricane Irma by at\nleast 24 h. This premature genesis is shown to result from an overestimation of the spatial coverage of deep convection within\nthe African easterly wave (AEW) from which Irma eventually forms. The gross overestimation of deep convection without\nall-sky IR BTs is accompanied by higher column saturation fraction, stronger low-level convergence, and the earlier spinup of\na low-level meso-\nb-scale vortex within the AEW that ultimately becomes Hurricane Irma. Through its adjustment to the ini-\ntial moisture and cloud conditions, the assimilation of all-sky IR BTs leads to a more realistic convective evolution in forecasts\nand ultimately a more realistic timing of genesis.\nSIGNIFICANCE STATEMENT: Every year hurricanes impact the lives of thousands of people living along the eastern\ncoast of the United States. Many of these storms originate from tropical disturbances that exit the west coast of Africa. To\ngive the public more warning time ahead of these storms, it is important to improve the forecasts of their formation. This\nstudy uses a system developed at The Pennsylvania State University to incorporate satellite observations into forecasts of a\nclassic Cape Verde storm, Hurricane Irma (2017), two days before it formed. By using satellite-collected radiances, we im-\nprove the timing of its formation by up to 24 h due to a better representation of the mesoscale tropical disturbance from\nwhich it originated.\nKEYWORDS: Tropical cyclones; Data assimilation; Numerical weather prediction/forecasting\n1. Introduction\nThe formation of a tropical depression from a preexisting\ntropical disturbance is an inadequately understood phenome-\nnon. Details of this early stage in the life cycle of a tropical cy-\nclone (TC) (aka, tropical cyclogenesis; hereafter \u201cgenesis\u201d)\nhave been challenging to uncover and forecast due to 1) dif\ufb01cul-\nties in understanding the complex nonlinear interactions that\noccur across scales ranging from the convective up to synoptic\nscales (Emanuel 2018; Tang et al. 2020 ; Nunez Ocasio 2021 ),\nand 2) a lack of in situ observations over the open ocean.\nThe environmental conditions favorable for genesis have\nbeen known for years. Aside from high sea surface tempera-\ntures, these conditions include low vertical wind shear, plenti-\nful midlevel moisture, and high vertical instability ( Gray 1968;\nDeMaria et al. 2001 ). Observational studies have also pointed\nout that genesis is usually related to a preexisting synoptic-\nscale tropical disturbance (e.g., Reed et al. 1977 ; Gray 1968 ;\nBriegel and Frank 1997 ; Ritchie and Holland 1997 ). For ex-\nample, the most common synoptic-scale disturbance involved in\nthe genesis of Atlantic TCs is the African easterly wave\n(AEW)}at least 70% of Atlantic TCs form in association with\nAEWs (Russell et al. 2017). In short, it is possible to locate ap-\nproximate preferred regions of genesis based on the large-scale\nenvironmental conditions and preexisting synoptic-scale tropical\ndisturbances.\nThe strong association between AEWs and genesis is particu-\nlarly interesting. Dunkerton et al. (2009) proposed that genesis\npreferentially occurs in regions where the lower-tropospheric\nAEW-relative streamlines exhibit a closed circulation (speci\ufb01-\ncally, the center of this meso-\na-scale circulation; also known as\nthe \u201cmarsupial pouch,\u201d or \u201cpouch\u201d in short). Their reasoning is\nthat the pouch not only provides a region of cyclonic rotation\nand weak strain/shearing deformation, but also protects the\ntropical disturbance within it from potentially harmful environ-\nmental conditions (e.g., dry air intrusion). This marsupial pouch\nparadigm has gained traction over the last decade as it has been\nreinforced by multiple modeling studies (e.g.,Wang et al. 2010;\nLi and Pu 2014 ; Asaadi et al. 2016 , 2017; Rajasree et al.\nSupplemental information related to this paper is available at\nthe Journals Online website: https://doi.org/10.1175/MWR-D-22-\n0196.s1.\nCorresponding author: Xingchao Chen, xzc55@psu.edu\nDOI: 10.1175/MWR-D-22-0196.1\n\u00d3 2023 American Meteorological Society. For information regarding reuse of this content and general copyright information, consult the AMS Copyright\nPolicy (www.ametsoc.org/PUBSReuseLicenses).\n837\nVOLUME 1 5 1 MONTHLY WEATHER REVIEW A PRIL 2023",
+          "meta": {
+            "source": "MWR-D-22-0196.1.pdf",
+            "page": 1,
+            "chunk_id": 0
+          }
+        }
+      ]
+    },
+    {
+      "query": "emergency kits water batteries",
+      "top_k": [
+        {
+          "doc_id": 75,
+          "score": 4.768551338030613,
+          "text": "Conservative Operations Mode or Emergency Procedures Implemented During Storm \nLeading up to the storm , the FRCC RC implemented conservative operations by calling for all TOPs to recall any \nmaintenance outages, if the TOP could do so, and cancel upcoming outages.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 20,
+            "chunk_id": 58
+          }
+        },
+        {
+          "doc_id": 38,
+          "score": 4.602864119800656,
+          "text": "As a result of these preparatory calls, the following actions occurred:  \n\uf0b7 The status and readiness of generation and transmission resources were determined. \n\uf0b7 The status of emergency response organizations was shared. \n\uf0b7 Plans for supplemental operations and support staffing were shared. \n\uf0b7 Maintenance outages that were postponed or brought back in service were discussed.",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 9,
+            "chunk_id": 21
+          }
+        },
+        {
+          "doc_id": 37,
+          "score": 4.448304152096498,
+          "text": "NERC Bulk Power Sy stem Awareness (BPSA) also began holding conference calls on September 9, 2017 , with FRCC, \nSERC and government agencies to gather and share information. Government agencies that were invited to attend \nthese calls include the Federal Energy Regulatory Commission (FERC), Department of Energy (DOE), Department of \nHomeland Security (DHS), Nuclear Regulatory Commission (NRC), and Federal Emergency Management Agency \n(FEMA).",
+          "meta": {
+            "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+            "page": 9,
+            "chunk_id": 20
+          }
+        }
+      ]
+    }
+  ]
+}

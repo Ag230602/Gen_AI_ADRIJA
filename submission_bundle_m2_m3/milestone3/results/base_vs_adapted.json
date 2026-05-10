@@ -1,0 +1,71 @@
+{
+  "task": "next_token_language_modeling",
+  "evaluation_set": "held-out test split (same split for base and adapted)",
+  "metrics": [
+    "test_loss",
+    "test_perplexity"
+  ],
+  "base_model": {
+    "name": "MiniGPT-2L-128d (custom)",
+    "size": "~0.47M parameters",
+    "tokenizer": "training_code/tokenizer/tokenizer.json",
+    "trainable_parameters": 470528,
+    "total_parameters": 470528,
+    "training": {
+      "seq_len": 64,
+      "batch_size": 8,
+      "lr": 0.0003,
+      "max_steps": 120,
+      "eval_every": 20,
+      "max_train_tokens": 220000,
+      "repeat_corpus": 250,
+      "seed": 42
+    },
+    "results": {
+      "train_loss_last": 4.926479339599609,
+      "val_loss_last": 4.927101910114288,
+      "test_loss": 4.862499892711639,
+      "test_perplexity": 129.3471522720442
+    }
+  },
+  "adapted_model": {
+    "method": "LoRA (PEFT)",
+    "applied_to": [
+      "lm_head"
+    ],
+    "lora_config": {
+      "target_modules": [
+        "lm_head"
+      ],
+      "rank": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    },
+    "trainable_parameters": 3072,
+    "total_parameters": 473600,
+    "training": {
+      "seq_len": 64,
+      "batch_size": 8,
+      "lr": 0.0003,
+      "max_steps": 120,
+      "eval_every": 20,
+      "max_train_tokens": 220000,
+      "repeat_corpus": 250,
+      "seed": 42
+    },
+    "results": {
+      "train_loss_last": 5.410656452178955,
+      "val_loss_last": 5.4621410965919495,
+      "test_loss": 5.390428185462952,
+      "test_perplexity": 219.29726535462714
+    }
+  },
+  "fairness": {
+    "same_task": true,
+    "same_heldout_set": true,
+    "same_metrics": true,
+    "same_eval_procedure": true,
+    "shared_initialization": true,
+    "seed": 42
+  }
+}

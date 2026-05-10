@@ -1,0 +1,22 @@
+{
+  "algorithm": "BPE",
+  "requested_vocab_size": 256,
+  "actual_vocab_size": 256,
+  "special_tokens": [
+    "[PAD]",
+    "[UNK]",
+    "[BOS]",
+    "[EOS]"
+  ],
+  "normalization": [
+    "NFKC",
+    "lowercase"
+  ],
+  "pre_tokenizer": "Whitespace",
+  "input_jsonl": "data/corpus.jsonl",
+  "artifacts": {
+    "tokenizer_json": "tokenizer.json",
+    "vocab_json": "vocab.json",
+    "merges_txt": "merges.txt"
+  }
+}
