@@ -25,6 +25,11 @@ if [[ ! -f "demo_video.mp4" && ! -f "demo_link.txt" ]]; then
   exit 1
 fi
 
+PPT_FILE=""
+if [[ -f "StormCare_RAG_Demo_Presentation.pptx" ]]; then
+  PPT_FILE="StormCare_RAG_Demo_Presentation.pptx"
+fi
+
 rm -f "$ZIP_NAME"
 zip -r "$ZIP_NAME" \
   code \
@@ -36,6 +41,7 @@ zip -r "$ZIP_NAME" \
   SUBMISSION_CHECKLIST.md \
   requirements.txt \
   paper.pdf \
+  ${PPT_FILE:+$PPT_FILE} \
   $( [[ -f demo_video.mp4 ]] && echo demo_video.mp4 || echo demo_link.txt )
 
 echo "Created: $ZIP_NAME"
