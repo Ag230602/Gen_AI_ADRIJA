@@ -4,6 +4,7 @@ This package provides a complete, reproducible end-to-end workflow:
 - PDF preprocessing to JSONL corpus
 - custom tokenizer training + diagnostics
 - retrieval demo (BM25)
+- retrieval evaluation metrics (Recall@k, HitRate@k, MRR, Precision@k)
 - fair quantitative base-vs-adapted (LoRA) comparison
 - dashboard orchestration and submission ZIP generation
 
@@ -58,7 +59,13 @@ Local dashboard URL after launch:
 .venv/bin/python code/training_code/retrieval/run_retrieval_demo.py
 ```
 
-5. Base vs adapted (LoRA) comparison
+5. Retrieval evaluation metrics
+
+```bash
+.venv/bin/python code/training_code/retrieval/evaluate_retrieval.py
+```
+
+6. Base vs adapted (LoRA) comparison
 
 ```bash
 .venv/bin/python code/training_code/base_vs_peft.py
@@ -97,6 +104,8 @@ It also generates the final required ZIP and provides a direct download button.
 Expected files:
 - `code/results/tokenizer_diagnostics.json`
 - `code/results/retrieval_demo.json`
+- `code/results/retrieval_eval.json`
+- `code/results/retrieval_eval.md`
 - `code/results/loss_log.txt`
 - `code/results/loss_plot.png`
 - `code/results/base_vs_adapted.json`
@@ -141,25 +150,31 @@ Expected files:
 .venv/bin/python code/training_code/retrieval/run_retrieval_demo.py
 ```
 
-5. Smoke test training
+5. Retrieval evaluation metrics
+
+```bash
+.venv/bin/python code/training_code/retrieval/evaluate_retrieval.py
+```
+
+6. Smoke test training
 
 ```bash
 .venv/bin/python code/training_code/smoke_test.py
 ```
 
-6. Base vs adapted (LoRA)
+7. Base vs adapted (LoRA)
 
 ```bash
 .venv/bin/python code/training_code/base_vs_peft.py
 ```
 
-7. Plot generation
+8. Plot generation
 
 ```bash
 .venv/bin/python code/training_code/generate_m3_plots.py
 ```
 
-8. Dashboard mode
+9. Dashboard mode
 
 ```bash
 .venv/bin/streamlit run code/training_code/m3_dashboard.py

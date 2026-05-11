@@ -1,0 +1,194 @@
+{
+  "method": "BM25",
+  "index": {
+    "type": "in-memory sparse index",
+    "k1": 1.5,
+    "b": 0.75,
+    "n_docs": 91
+  },
+  "evaluation": {
+    "n_queries": 3,
+    "k_values": [
+      1,
+      3,
+      5
+    ],
+    "labeling": "hand-labeled relevant chunks (source/page/chunk_id)"
+  },
+  "metrics": {
+    "Recall@1": 0.6666666666666666,
+    "Recall@3": 1.0,
+    "Recall@5": 1.0,
+    "HitRate@1": 0.6666666666666666,
+    "HitRate@3": 1.0,
+    "HitRate@5": 1.0,
+    "Precision@1": 0.6666666666666666,
+    "Precision@3": 0.3333333333333333,
+    "Precision@5": 0.20000000000000004,
+    "MRR": 0.8333333333333334
+  },
+  "per_query": [
+    {
+      "query": "flooding storm surge",
+      "relevant_doc_ids": [
+        64
+      ],
+      "first_relevant_rank": 1,
+      "Recall@1": 1.0,
+      "HitRate@1": 1.0,
+      "Precision@1": 1.0,
+      "Recall@3": 1.0,
+      "HitRate@3": 1.0,
+      "Precision@3": 0.3333333333333333,
+      "Recall@5": 1.0,
+      "HitRate@5": 1.0,
+      "Precision@5": 0.2,
+      "RR": 1.0,
+      "top5": [
+        {
+          "doc_id": 64,
+          "score": 8.674412534792378,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 16,
+          "chunk_id": 47
+        },
+        {
+          "doc_id": 33,
+          "score": 7.31059792932517,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 8,
+          "chunk_id": 16
+        },
+        {
+          "doc_id": 27,
+          "score": 6.790295219791933,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 6,
+          "chunk_id": 10
+        },
+        {
+          "doc_id": 23,
+          "score": 5.749536287010754,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 6,
+          "chunk_id": 6
+        },
+        {
+          "doc_id": 49,
+          "score": 4.662233880802251,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 11,
+          "chunk_id": 32
+        }
+      ]
+    },
+    {
+      "query": "evacuation orders",
+      "relevant_doc_ids": [
+        53
+      ],
+      "first_relevant_rank": 2,
+      "Recall@1": 0.0,
+      "HitRate@1": 0.0,
+      "Precision@1": 0.0,
+      "Recall@3": 1.0,
+      "HitRate@3": 1.0,
+      "Precision@3": 0.3333333333333333,
+      "Recall@5": 1.0,
+      "HitRate@5": 1.0,
+      "Precision@5": 0.2,
+      "RR": 0.5,
+      "top5": [
+        {
+          "doc_id": 30,
+          "score": 4.9100473056929586,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 7,
+          "chunk_id": 13
+        },
+        {
+          "doc_id": 53,
+          "score": 3.167897375774286,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 12,
+          "chunk_id": 36
+        },
+        {
+          "doc_id": 0,
+          "score": 0.0,
+          "source": "MWR-D-22-0196.1.pdf",
+          "page": 1,
+          "chunk_id": 0
+        },
+        {
+          "doc_id": 1,
+          "score": 0.0,
+          "source": "MWR-D-22-0196.1.pdf",
+          "page": 2,
+          "chunk_id": 1
+        },
+        {
+          "doc_id": 2,
+          "score": 0.0,
+          "source": "MWR-D-22-0196.1.pdf",
+          "page": 3,
+          "chunk_id": 2
+        }
+      ]
+    },
+    {
+      "query": "emergency kits water batteries",
+      "relevant_doc_ids": [
+        75
+      ],
+      "first_relevant_rank": 1,
+      "Recall@1": 1.0,
+      "HitRate@1": 1.0,
+      "Precision@1": 1.0,
+      "Recall@3": 1.0,
+      "HitRate@3": 1.0,
+      "Precision@3": 0.3333333333333333,
+      "Recall@5": 1.0,
+      "HitRate@5": 1.0,
+      "Precision@5": 0.2,
+      "RR": 1.0,
+      "top5": [
+        {
+          "doc_id": 75,
+          "score": 4.768551338030613,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 20,
+          "chunk_id": 58
+        },
+        {
+          "doc_id": 38,
+          "score": 4.602864119800656,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 9,
+          "chunk_id": 21
+        },
+        {
+          "doc_id": 37,
+          "score": 4.448304152096498,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 9,
+          "chunk_id": 20
+        },
+        {
+          "doc_id": 60,
+          "score": 4.241156297794829,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 16,
+          "chunk_id": 43
+        },
+        {
+          "doc_id": 51,
+          "score": 3.3847862225776697,
+          "source": "september-2017-hurricane-irma-event-analysis-report.pdf",
+          "page": 11,
+          "chunk_id": 34
+        }
+      ]
+    }
+  ]
+}

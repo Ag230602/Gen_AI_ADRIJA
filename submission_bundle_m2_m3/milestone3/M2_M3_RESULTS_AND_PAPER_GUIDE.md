@@ -150,6 +150,30 @@ Interpretation:
 | Main quantitative output | tokenizer/retrieval/loss diagnostics | base-vs-adapted loss/perplexity and parameter counts |
 | Key evidence files | `../submission_m2/results/*` | `results/base_vs_adapted.json`, `results/base_vs_adapted.md` |
 
+### 4.5 Track C retrieval evaluation (explicit metrics)
+
+Retrieval pipeline details (current implementation):
+- chunking: paragraph chunks from PDFs with `--mode paragraph --min_chars 200`
+- retrieval method: sparse BM25
+- index type: in-memory BM25 index
+- ranking settings: `k1=1.5`, `b=0.75`
+- evaluation cutoff values: $k \in \{1, 3, 5\}$
+
+Evidence files:
+- `results/retrieval_eval.json`
+- `results/retrieval_eval.md`
+
+Quantitative retrieval metrics:
+
+| Retrieval Setting | Recall@1 | Recall@3 | Recall@5 | Hit@1 | Hit@3 | Hit@5 | Precision@1 | Precision@3 | Precision@5 | MRR |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| BM25 (k1=1.5, b=0.75) | 0.6667 | 1.0000 | 1.0000 | 0.6667 | 1.0000 | 1.0000 | 0.6667 | 0.3333 | 0.2000 | 0.8333 |
+
+Interpretation:
+- at $k=5$, all queries retrieve at least one relevant chunk (Hit@5=1.0),
+- rank quality is strong but not perfect (MRR=0.8333),
+- one query has first relevant at rank 2, reducing Recall@1 and Hit@1.
+
 ---
 
 ## 5) What was done across M2 -> M3

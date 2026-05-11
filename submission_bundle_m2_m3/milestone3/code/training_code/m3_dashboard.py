@@ -43,12 +43,15 @@ STEPS: List[Step] = [
     Step("tok", "2) Train tokenizer", "code/training_code/train_tokenizer.py", []),
     Step("diag", "3) Tokenizer diagnostics", "code/training_code/tokenizer_diagnostics.py", []),
     Step("ret", "4) Retrieval demo", "code/training_code/retrieval/run_retrieval_demo.py", []),
+    Step("ret_eval", "4b) Retrieval evaluation", "code/training_code/retrieval/evaluate_retrieval.py", []),
     Step("peft", "5) Base vs Adapted (LoRA)", "code/training_code/base_vs_peft.py", []),
 ]
 
 REQUIRED_ARTIFACTS = [
     "code/results/tokenizer_diagnostics.json",
     "code/results/retrieval_demo.json",
+    "code/results/retrieval_eval.json",
+    "code/results/retrieval_eval.md",
     "code/results/base_vs_adapted.json",
     "code/results/base_vs_adapted.md",
     "code/results/loss_log.txt",
@@ -187,6 +190,16 @@ def render_metrics() -> None:
     if loss_last:
         st.markdown("**Last logged loss row**")
         st.json(loss_last)
+
+    retrieval_eval = read_json(RESULTS_DIR / "retrieval_eval.json")
+    if retrieval_eval:
+        st.markdown("**Retrieval evaluation (Track C)**")
+        m = retrieval_eval.get("metrics", {})
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Recall@5", f"{m.get('Recall@5', 'NA'):.4f}" if isinstance(m.get("Recall@5"), (int, float)) else "NA")
+        c2.metric("HitRate@5", f"{m.get('HitRate@5', 'NA'):.4f}" if isinstance(m.get("HitRate@5"), (int, float)) else "NA")
+        c3.metric("Precision@5", f"{m.get('Precision@5', 'NA'):.4f}" if isinstance(m.get("Precision@5"), (int, float)) else "NA")
+        c4.metric("MRR", f"{m.get('MRR', 'NA'):.4f}" if isinstance(m.get("MRR"), (int, float)) else "NA")
 
 
 def render_retrieval_preview() -> None:
